@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="maximum-scale=1,minimum-scale=1,user-scalable=no,width=device-width,initial-scale=1"><meta content=no name=apple-mobile-web-app-capable><meta content=black name=apple-mobile-web-app-status-bar-style><meta content="telephone=no" name=format-detection><title>中融商城</title><script type=text/javascript src=static/js/flexible.js></script><script type=text/javascript src=http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js></script><link rel=stylesheet href=static/css/reset.css><style>body{
+        min-height:100vh;
+      }</style><link href=./static/css/app.b6d37575bc3007391dff5bc0f293d960.css rel=stylesheet></head><body><div id=app></div><script>window.onload=function () {  
+        document.addEventListener('touchstart',function (event) {  
+            if(event.touches.length>1){  
+                event.preventDefault();  
+            }  
+        })  
+        var lastTouchEnd=0;  
+        document.addEventListener('touchend',function (event) {  
+            var now=(new Date()).getTime();  
+            if(now-lastTouchEnd<=300){  
+                event.preventDefault();  
+            }  
+            lastTouchEnd=now;  
+        },false)  
+    }  </script><script type=text/javascript src=./static/js/manifest.355807c41b1af70a2c64.js></script><script type=text/javascript src=./static/js/vendor.3cce9be7fd9a1e6346b5.js></script><script type=text/javascript src=./static/js/app.42a668e4ee5bf17de8ff.js></script></body></html>
